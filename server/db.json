@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Light",
+      "price": 300,
+      "quantity": 4,
+      "imgURL": "'assets/imgs/products/1.jpg'"
+    },
+    {
+      "id": 5,
+      "productName": "sumsong",
+      "price": "1000",
+      "quantity": "1",
+      "imgURL": "assets/imgs/products/2.jpg"
+    },
+    {
+      "id": "12",
+      "productName": "Kamel",
+      "price": "200",
+      "quantity": "10",
+      "imgURL": "assets/imgs/products/3.jpg"
+    },
+    {
+      "id": "10",
+      "productName": "ssaa",
+      "price": "333",
+      "quantity": "500",
+      "imgURL": "assets/imgs/products/5.jpg"
+    },
+    {
+      "id": "20",
+      "productName": "Last Product",
+      "price": "90",
+      "quantity": "100",
+      "imgURL": "assets/imgs/products/5.jpg"
+    }
+  ]
+}

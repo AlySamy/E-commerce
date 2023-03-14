@@ -1,0 +1,55 @@
+<form
+  (submit)="edit($event)"
+  [formGroup]="productForm"
+  action=""
+  class="form-inline py-3"
+>
+  <div class="form-group">
+    <label for="">Id</label>
+    <input formControlName="id" class="form-control" type="text" name="id" value="{{product.id}}" />
+  </div>
+  <div class="form-group">
+    <label for="">Title</label>
+    <input
+      formControlName="productName"
+      class="form-control"
+      type="text"
+      name="Title"
+      id=""
+      value="{{product.name}}"
+    />
+  </div>
+  <div class="form-group">
+    <label for="">Price</label>
+    <input
+      formControlName="price"
+      class="form-control"
+      type="text"
+      name="Price"
+      id=""
+      value="{{product?.price}}"
+    />
+  </div>
+  <div class="form-group">
+    <label for="">Quantity</label>
+    <input
+      formControlName="quantity"
+      class="form-control"
+      type="text"
+      name="Quantity"
+      id=""
+      value="{{product.quantity}}"
+    />
+  </div>
+  <div class="form-group">
+    <label for="">Image</label>
+    <input
+      formControlName="imgURL"
+      class="form-control"
+      type="text"
+      name="Quantity"
+      id=""
+    />
+    <button  class="mt-2 btn btn-primary">Save changes</button>
+  </div>
+</form>

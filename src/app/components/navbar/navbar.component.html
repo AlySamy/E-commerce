@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand fs-3 text-success" href="#">ecommerce</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+      <ul class="navbar-nav fs-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"[routerLink]="['/welcom']" [routerLinkActive]="'text-success'">Home</a>
+
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/products']"[routerLinkActive]="'text-success'">Products</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">add products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+     <div >
+      <ul class="navbar-nav fs-3">
+        <li class="nav-item"> <a class="nav-link disabled">{{getUsername()}}</a></li>
+        <li class="nav-item"> <a class="nav-link text-warning" [routerLink]="['/login']" *ngIf="!isLoged()" >login</a></li>
+        <li class="nav-item"> <a class="nav-link text-warning" [routerLink]="['/login']" *ngIf="isLoged()" (click)="logOut()">logout</a></li>
+      </ul>
+     </div>
+    </div>
+  </div>
+</nav>

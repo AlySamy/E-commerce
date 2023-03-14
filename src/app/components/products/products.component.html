@@ -1,0 +1,15 @@
+<div class="d-flex flex-wrap gap-3 mt-4 justify-content-around">
+  <div class="card col-2" *ngFor="let product of products">
+    <img [src]="product?.imgUrl" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{product.productName}}</h5>
+      <div class=" d-flex justify-content-between">
+        <a class="btn btn-primary" [routerLink]="['/products',product.id]">view</a>
+        <a class="btn btn-success" [routerLink]="['/products',product.id,'edit']">Edit</a>
+        <!-- <a class="btn btn-danger" (click)="deletProduct(product.id)">delete</a> -->
+      </div>
+
+    </div>
+
+</div>
+</div>
