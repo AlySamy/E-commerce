@@ -26,7 +26,7 @@ export class EditApiComponent implements OnInit {
 
         this.product=response;
         if(this.product.id == 0){
-          this.productService.create(this.productForm.value);
+          this.productService.create(this.productForm.value).subscribe();
         }
         this.productForm.controls.id.setValue(this.product.id);
         this.productForm.controls.productName.setValue(this.product.productName);
